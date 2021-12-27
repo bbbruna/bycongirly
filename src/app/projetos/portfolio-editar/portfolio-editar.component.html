@@ -1,0 +1,61 @@
+<div class="container">
+<div class="row justify-content-center pt-4 pb-4">
+    <div class="col-6 mt-5">
+        <h2 class="mt-2 mb-2"> Editar itens</h2>
+
+        <form>
+            <div class="text-center mb-2">
+              <img class="mr-4"[src]="item.colagem" width="40%">
+              <img [src]="item.imagem" width="45%">
+            </div>
+      
+            <div class="form-group">
+              <label for="id">Id</label>
+              <input type="number" class="form-control" id="codigo" name="codigo" readonly
+              [ngModel]="item.id">
+            </div>
+      
+            <div class="form-group">
+              <label for="nome">Coleção</label>
+              <input type="text" class="form-control" id="nome" name="nome"
+              [(ngModel)]="item.colecao">
+            </div>
+
+            <div class="form-group">
+              <label for="descricao">Descrição</label>
+              <textarea class="form-control" id="descricao" name="descricao" [(ngModel)]="item.descricao"></textarea>
+            </div>
+
+          <div class="form-group">
+              <label for="imagem">Imagem 1</label>
+              <textarea class="form-control" id="imagem" name="imagem" [(ngModel)]="item.imagem"></textarea>
+          </div>
+
+          <div class="form-group">
+              <label for="imagem">Imagem 2</label>
+              <textarea class="form-control" id="imagem2" name="imagem2" [(ngModel)]="item.imagem2"></textarea>
+          </div>
+
+          <div class="form-group">
+              <label for="imagem">Colagem</label>
+              <textarea class="form-control" id="colagem" name="colagem" [(ngModel)]="item.colagem"></textarea>
+          </div>  
+
+          
+          <div class="row mt-4">
+
+             <div class="col-6">
+               <button [routerLink]="['/painel']" class="btn btn-dark btn-block"> Voltar </button>
+             </div>
+      
+             <div class="col-6">
+                <button class="btn btn-success btn-block" (click)="atualizar()"> Salvar </button>
+              </div>
+
+          </div>
+
+        </form>
+    </div>
+</div>
+</div>
+

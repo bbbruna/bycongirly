@@ -1,0 +1,196 @@
+<section class="container">
+
+    <div class="row pt-3 mr-2 justify-content-center align-items-center">
+    <div class="bg2 col-auto d-flex flex-column justify-content-center "> 
+        <a> CRIAÇÕES
+            <button class="btn2 ml-1" [routerLink]="['/home']" type="submit"><i class="fas fa-search simb"></i> </button>
+            <button class="btn2" [routerLink]="['/home']" type="submit"><i class="simb fas fa-arrow-left"></i> </button>
+        </a>
+    </div>            
+
+    <div class="row pt-3 justify-content-center mb-5" id="bg">
+        <div class="col-auto d-flex flex-column justify-content-center" *ngFor="let obj of opcaoLista; let i=index">     
+            <div class="card-deck">
+    
+            <div class="card-body mt-2">
+    
+                <div class="menu mb-3"  [ngClass]="'menu'+ i">
+                    <div class="elipse1"></div>
+                    <div class="elipse2"></div>
+                    <div class="elipse3"></div>
+                    <div class="logo"> <img class="logo img-fluid" [src]="obj.logo" alt="logo"> </div>
+                </div>
+    
+                <div class="card3 mb-3" [ngClass]="'card'+ i" style="max-width: 17rem;"> 
+                    <img [routerLink]="['/desenhos', obj.id]" [src]="obj.imagem" class="desenho1 img-fluid" alt="desenho1">
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+     </div>
+
+  
+<nav aria-label="Page navigation example">
+    <ul class="pagination pagination-sm mt-3 justify-content-center">
+  
+      <li class="page-item disabled" class="page-link" aria-label="Previous" *ngIf="(indice==1)">
+        <span aria-hidden="true">&laquo;</span>
+      </li>
+  
+      <li class="page-item" *ngIf="(indice!=1)">
+        <a class="page-link" tabindex="-1" (click)="mudarPaginar(indice-1)">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+  
+  
+      <div *ngFor="let obj of paginas">
+  
+        <li class="page-item" *ngIf="(indice!=obj.id)">
+          <a class="page-link" (click)="mudarPaginar(obj.id)">{{obj.id}}</a>
+        </li>
+  
+        <li class="page-item active" aria-current="page" *ngIf="(indice==obj.id)">
+          <a class="page-link"> {{obj.id}}
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </div>
+  
+      <li class="page-item disabled" *ngIf="!proximo">
+        <a class="page-link" class="page-link" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+  
+      <li class="page-item" *ngIf="proximo">
+        <a class="page-link" (click)="mudarPaginar(indice+1)">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+  
+  
+    </ul>
+  </nav>
+  
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section>
+
+      <div class="row vh-100 mt-4 justify-content-center align-items-center" id="aa">
+    <div class="col-auto d-flex  flex-wrap justify-content-center align-items-center pt-2 pb-2" id="bg" *ngFor="let obj of opcaoLista; let i=index">     
+        <div class="card-deck">
+
+        <div class="card-body mt-2">
+
+            <div class="menu mb-3"  [ngClass]="'menu'+ i">
+                <div class="elipse1"></div>
+                <div class="elipse2"></div>
+                <div class="elipse3"></div>
+                <div class="logo"> <img class="logo img-fluid" [src]="obj.logo" alt="logo"> </div>
+            </div>
+
+            <div class="card3" [ngClass]="'card'+ i" style="max-width: 17rem;"> 
+                <img [routerLink]="['/desenhos', obj.id]" [src]="obj.imagem" class="desenho1 img-fluid" alt="desenho1">
+            </div>   
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <section>
+
+    <div class="row vh-100 justify-content-center" id="bg">
+         <div class="quadro col-7 d-flex flex-column justify-content-center align-items-center" >
+            <img class="capa img-fluid card-img-top" src="./assets/img/capa.png" alt="Capa">
+        </div>
+    </div>
+
+</section> 
+
+
+    <div class="row vh-100 justify-content-center align-items-center">
+
+        <div class="col-auto d-flex flex-column justify-content-center align-items-center pt-2 pb-2">
+
+        <div class="card-deck" >
+            
+            
+            <div class="card-body">
+
+                <div class="menu mb-3">
+                    <div class="elipse1"></div>
+                    <div class="elipse2"></div>
+                    <div class="elipse3"></div>
+                    <div class="logo"> <img class="logo img-fluid" src="./assets/img/logo2.png" alt="logo"> </div>
+                </div>
+
+                <div class="card1" style="max-width: 16rem;">
+
+                     <img [routerLink]="['/desenhos']" class="desenho1 mt-2 img-fluid card-img-top" src="./assets/img/desenho1.jpg" alt="desenho1">        
+                
+                </div>
+            </div>
+        
+
+            <div class="card-body">
+                <div class="menu1 mb-3">
+                    <div class="elipse1"></div>
+                    <div class="elipse2"></div>
+                    <div class="elipse3"></div>
+                    <div class="logo"> </div>
+                    <div class="logo"> <img class="logo img-fluid" src="./assets/img/logo2.png" alt="logo"> </div>
+                </div>
+                <div class="card2" style="max-width: 16rem;">
+                    <img [routerLink]="['/desenhos']" class="desenho2 mt-2 img-fluid card-img-top" src="./assets/img/desenho2.jpg" alt="desenho1">
+                </div>      
+            </div>
+
+
+            <div class="card-body">
+                <div class="menu2 mb-3">
+                    <div class="elipse1"></div>
+                    <div class="elipse2"></div>
+                    <div class="elipse3"></div>
+                    <div class="logo"> <img class="logo img-fluid" src="./assets/img/logo2.png" alt="logo"> </div>
+                </div>
+                <div class="card3" style="max-width: 16rem;">
+                    <img [routerLink]="['/desenhos']" class="desenho3 img-fluid card-img-top" src="./assets/img/desenho3.jpg" alt="desenho3">
+                </div>
+            </div>
+
+
+
+           
+          </div> 
+
+        </div>
+
+
+    </div>
+
+</section>
+
+-->
+ 
+
+

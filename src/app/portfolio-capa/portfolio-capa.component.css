@@ -1,0 +1,164 @@
+#bg{
+    position: relative;
+    border: solid 1px black;
+    top: 50px;
+    background-color: #f8d5ea;
+    box-sizing: border-box;
+    width: 90%;
+    align-content: center;
+}
+
+.bg2{
+    position: relative;
+    top: 30px;
+    height: 35px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-family: monospace;
+    background-color: #df5a9c;
+    width: 90%;
+}
+.btn2{
+    position: relative;
+    float: right;
+    background-color: rgb(243, 215, 231);
+    border-radius: 2px solid black;
+}
+
+.simb{
+    position: relative;
+    float: right;
+   padding: 1px;
+}
+
+.card-body{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+.menu{
+    width: 100%;
+    height: 40px;
+    background: #eab1ef;
+    border-radius: 10px;
+}
+
+.desenho1{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    border: double 1px black;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #f3b5f8;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.menu1{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #ee91bf;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.menu2{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #fc8fea;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.card3{
+   border-radius: 5px;
+   padding: 8px;
+   background: #f3b5f8;
+   border:1px solid black;
+}
+
+.card1{
+    padding: 8px;
+    background: #ee91bf;
+    border-radius: 5px;
+    border:1px solid black;
+}
+
+.card2{
+    padding: 8px;
+    background: #fc8fea;
+    border-radius: 5px;
+    border:1px solid black;
+}
+
+.elipse1{ 
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background: #1FC530;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: 1px solid rgba(0, 0, 0, 1);
+
+}
+
+.elipse2{
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background: #E354B3;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.elipse3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    left: 70px;
+    top: 10px;
+    background: #fffc2e;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.logo{
+    position: relative;
+    width: 59%;
+    top: 2px;
+    float: right;
+    right: 4px;
+}
+
+.card-body:hover{
+    transform: scale(1.1);
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #df5a9c;
+    background-color: #fff;
+    border: 1px solid #f8d5ea;
+    border-radius: 3px;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #ffffff;
+    background-color: #df5a9c;
+    border-color: #f3b2d2;
+}

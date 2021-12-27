@@ -1,0 +1,89 @@
+<div class="justify-content-center  mx-auto">
+
+    <div class="bg2 col-auto d-flex flex-column justify-content-center"> 
+      <a> DADOS         
+      </a>
+  </div>   
+
+  <form>
+  <div class="form-group mt-4">
+
+    <div class="form-group ">
+      <label for="id">Id</label>
+      <input type="text" class="form-control" id="id" name="id" [ngModel]="cliente.id" readonly>
+    </div>
+
+    <div class="form-group ">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" name="nome" [ngModel]="cliente.nome" readonly>
+  </div>
+
+  <div class="form-group ">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" name="email" [ngModel]="cliente.email" readonly>
+  </div>
+
+  <div class="form-group ">
+    <label for="contato">Contato</label>
+    <input type="text" class="form-control" id="contato" name="contato" [ngModel]="cliente.contato" readonly>
+  </div>
+
+  <div class="form-group">
+    <label for="redeSociais">Redes sociais</label>
+    <input type="redeSociais" class="form-control" id="redeSociais" name="redeSociais" [(ngModel)]="cliente.redeSociais">
+  </div>
+
+  <div class="form-group ">
+    <label for="linkReuniao"> Link reunião </label>
+    <input type="text" class="form-control" id="linkReuniao" name="linkReuniao" [ngModel]="cliente.linkReuniao" readonly>  
+  </div>
+
+  <div class="form-group ">
+    <label for="briefing"> Briefing </label>
+    <input type="text" class="form-control" id="briefing" name="briefing" [ngModel]="cliente.briefing" readonly>  
+  </div>
+
+  <div class="form-group ">
+    <label for="medidas"> Medidas </label>
+    <input type="text" class="form-control" id="medidas" name="medidas" [ngModel]="cliente.medidas" readonly>  
+  </div>
+
+
+  <div class="form-group ">
+    <label for="endereco">Endereço</label>
+    <input type="text" class="form-control" id="endereco" name="endereco" [ngModel]="cliente.endereco" readonly>
+  </div>
+
+  <div class="form-group ">
+    <label for="cidade">Cidade</label>
+    <input type="text" class="form-control" id="cidade" name="cidade" [ngModel]="cliente.cidade" readonly>
+  </div>
+
+  <div class="form-group">
+    <label for="estado">Estado</label>
+    <input type="text" class="form-control" id="estado" name="estado" [ngModel]="cliente.estado" readonly>
+  </div>
+
+  <div class="form-group">
+    <label for="cep">Cep</label>
+    <input type="text" class="form-control" id="cep" name="cep" [ngModel]="cliente.cep" readonly>
+  </div>
+
+  <div class="form-group data pt-2">
+    <label for="data">Data da reunião: </label>
+     {{ cliente.data | date: 'dd/MM/yyyy'}}
+  </div>
+
+  <div class="form-group orcamento pb-1">
+    <label for="orcamentoFinal"> Orçamento final: </label>
+    {{cliente.orcamentoFinal | currency: 'BRL'}}
+    
+  </div>
+
+  <button type="button" class="mt-4 mx-auto btn btn-warning btn-block mb-4" [routerLink]="['../',cliente.id,'update']">
+    Editar
+  </button>
+
+</div>
+</form>
+</div>

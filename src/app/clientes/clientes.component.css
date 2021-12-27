@@ -1,0 +1,28 @@
+.bg2{
+    position: relative;
+    top: 10px;
+    height: 35px;
+    border: 1px solid #000000;
+    font-family: monospace;
+    background-color: #79a7d9;
+    width: auto;
+    font-style: bold;
+    margin-bottom: 2px solid black;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 0.5px solid black;
+    border-radius: 0px;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #79a7d9;
+    border-color: #79a7d9;
+    border-radius: 0px;
+    border: 1px solid black;
+}

@@ -1,0 +1,56 @@
+<div class="container">
+ 
+    <div class="row pt-5 mb-5 mr-5 mr-2 justify-content-center align-items-center">
+        <div class="bg3 col-auto d-flex flex-column justify-content-center "> 
+            <a> LOGIN
+                <button class="btn2" [routerLink]="['/home']" type="submit"><i class="simb fas fa-arrow-left"></i> </button>
+            </a>
+        </div>   
+
+        <div class="row pt-3 justify-content-center mb-5" id="bg" >     
+           
+                  <form class="col-8 pt-2 pb-5" #formulario="ngForm" (ngSubmit)="efetuarLogin(formulario)">
+
+                    <form class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        </div>
+
+                        <input type="email" class="form-control" id="email" name="email"
+                        placeholder="email@email.com"  [(ngModel)]="usuario.email" #email="ngModel" required>
+                    </div>
+                    
+                    <div class="alert alert-danger" *ngIf="!email.valid && email.touched">
+                        Digite o email
+                    </div>
+                </form>
+
+                <form class="form-group">
+                    <label for="email">Senha</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" id="senha" name="senha"
+                        placeholder="*******"  [(ngModel)]="usuario.senha" #senha="ngModel" required>
+                    </div>
+
+                    <div class="alert alert-danger" *ngIf="!senha.valid && senha.touched">
+                        Digite a senha
+                    </div>
+                </form>
+
+                    <div class="mt-4">
+                    <div class="d-flex justify-content-center mt-3 mb-1 login_container">
+                        <button type="submit" [disabled]="!formulario.valid"  class="btn btn-dark btn-color mb-2">Entrar</button>                     
+                    </div>
+
+                   <div class="form-group d-flex justify-content-center"><small class="text-muted">Não possui cadastro? </small> <a class="small ml-1" [routerLink]="['/registrar']" > Criar conta</a> </div>
+                </div>
+            </form>
+                
+        </div>
+    </div>
+</div>

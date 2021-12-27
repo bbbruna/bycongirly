@@ -1,0 +1,44 @@
+.bg2{
+    position: relative;
+    top: 10px;
+    height: 35px;
+    border: 1px solid #000000;
+    font-family: monospace;
+    background-color: #7ef57a;
+    width: 100%;
+    font-style: bold;
+    margin-bottom: 2px solid black;
+}
+
+
+#bg{
+    position: relative;
+    border: solid 1px black;
+    top: 50px;
+    background-color: #f9ffe1;
+    box-sizing: border-box;
+    width: 100%;
+    align-content: center;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-success {
+    color: #000000;
+    border-radius: 0px;
+    border: 1px solid black;
+}

@@ -1,0 +1,52 @@
+.card{
+    position: relative;
+    height: auto;
+    bottom: 10px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px 5px 5px 15px;
+    font-family: monospace;
+}
+
+
+.desenho{
+    position: relative;
+}
+
+.img{
+    width: 100%;
+}
+
+.btn2{
+    position: relative;
+    float: right;
+    background-color: rgb(243, 215, 231);
+}
+
+.simb{
+    position: relative;
+    float: right;
+}
+
+
+
+.bg2{
+    position: relative;
+    top: 10px;
+    height: 35px;
+    border: 1px solid #000000;
+    font-family: monospace;
+    background-color: #df5a9c;
+    width: 100%;
+}
+
+#bg{
+  position: relative;
+  border: solid 1px black;
+  top: 20px;
+  background-color: #eb84af;
+  box-sizing: border-box;
+  width: 100%;
+  align-content: center;
+}
+

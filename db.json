@@ -1,0 +1,113 @@
+{
+  "item": [
+    {
+      "id": 1,
+      "logo": "./assets/img/logo2.png",
+      "imagem": "./assets/img/desenho1.jpg",
+      "imagem2": "./assets/img/desenho1.1.png",
+      "colagem": "./assets/img/desenho1.1.1.png",
+      "colecao": "Comunnicate",
+      "descricao": "Macaquinho balonê com sobreposição ACTION em letras tridimencionais confeccionadas em tecido com enchimento + luvas boxer bailarina. Feito à partir de vestidos de festa inutilizados. "
+    },
+    {
+      "id": 2,
+      "logo": "./assets/img/logo2.png",
+      "imagem": "./assets/img/desenho2.jpg",
+      "imagem2": "./assets/img/desenho2.1.png",
+      "colagem": "./assets/img/desenho2.2.2.png",
+      "colecao": "Comunnicate",
+      "descricao": "Bottom assimétrico, metade em short multicamadaspregueado metade franjas com aplicações de borboleta. Camisa assimétrica com tiras aplicadas e aplicações de borboleta + luvas boxer bailarina. Feito à partir de vestidos de festa inutilizados. "
+    },
+    {
+      "id": 3,
+      "logo": "./assets/img/logo2.png",
+      "imagem": "./../../assets/img/desenho3.jpg",
+      "imagem2": "./assets/img/desenho3.1.png",
+      "colagem": "./assets/img/desenho3.3.3.png",
+      "colecao": "Comunnicate",
+      "descricao": "Saia estruturada feita à partir de patches oriundos de vestidos de festa inutilizados. Cropped rosa de alça em laços e mangas volumosas removíveis + luvas boxer bailarina e choker borboletas."
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nome": "Teste",
+      "email": "teste1@email.com",
+      "senha": "12345",
+      "endereco": "Rua A",
+      "cidade": "Belo Horizonte",
+      "estado": "Minas Gerais",
+      "numero": "12"
+    },
+    {
+      "id": 2,
+      "nome": "Teste2",
+      "email": "teste2@email.com",
+      "senha": "123456",
+      "endereco": "Rua B",
+      "cidade": "Belo Horizonte",
+      "estado": "Minas Gerais",
+      "numero": "10"
+    },
+    {
+      "id": 3,
+      "nome": "Teste3",
+      "email": "teste3@email.com",
+      "senha": "123456",
+      "endereco": "Rua C",
+      "cidade": "Belo Horizonte",
+      "estado": "Minas Gerais",
+      "numero": "30"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Teste1",
+      "email": "teste@email.com",
+      "contato": "000000",
+      "endereco": "Rua A",
+      "cidade": "BELO HORIZONTE",
+      "estado": "MINAS GERAIS",
+      "briefing": "teste",
+      "redeSociais": "@instagram",
+      "medidas": "teste",
+      "linkReuniao": "teste",
+      "cep": "123456",
+      "orcamentoFinal": 200,
+      "data": "2021-12-15"
+    },
+    {
+      "id": 2,
+      "nome": "Teste2",
+      "email": "teste1@email.com",
+      "contato": "123456",
+      "endereco": "A",
+      "cidade": "BELO HORIZONTE",
+      "estado": "MINAS GERAIS",
+      "briefing": "teste2",
+      "redeSociais": "@instagram",
+      "medidas": "teste3",
+      "linkReuniao": "teste",
+      "cep": "30220110",
+      "orcamentoFinal": 235.3,
+      "data": "2022-01-08"
+    },
+    {
+      "id": 3,
+      "nome": "Teste3",
+      "email": "teste3@email.com",
+      "contato": "123456",
+      "endereco": "RUA  PALMIRA",
+      "cidade": "BELO HORIZONTE",
+      "estado": "MINAS GERAIS",
+      "briefing": "teste",
+      "redeSociais": "@instagram",
+      "medidas": "teste",
+      "linkReuniao": "teste",
+      "cep": "30220110",
+      "orcamentoFinal": 100,
+      "data": "2021-12-16"
+    }
+  ]
+}

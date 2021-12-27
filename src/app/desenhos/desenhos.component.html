@@ -1,0 +1,48 @@
+<div class="container">
+
+    <div class="row justify-content-center align-items-center">
+
+    <div class="col-auto d-flex flex-column justify-content-center align-items-center pt-3 pb-5" >
+
+        <div class="row pt-3 mr-2 justify-content-center align-items-center">
+            <div class="bg2 col-auto d-flex flex-column justify-content-center "> 
+                <a> DESENHO DE MODA 
+                    <button class="btn2" [routerLink]="['/home']" type="submit"><i class="simb fas fa-home"></i> </button>
+                    <button class="btn2 mr-1" [routerLink]="['/portfolio']" type="submit"><i class="simb fas fa-arrow-left"></i> </button>
+                </a>
+              </div>  
+                
+          <div class="row pt-3 justify-content-center" id="bg">
+                    <div class="col-auto d-flex flex-column justify-content-center">
+             
+                <div class="row pt-3 justify-content-center">
+                    
+                    <div class="imagem col-auto d-flex flex-column justify-content-center col-5 mr-5 ml-4 mb-3" style="max-width: 33rem;">
+                        <div class="card"> 
+                             {{desenho.colecao | uppercase}}  </div>
+                        <img class="img-fluid card-img-top" [src]="desenho.colagem" alt="colagem de desenhos">
+
+                        <button (click)="exibirElemento()" class="btn btn-dark mt-3"><i class="fas fa-search-plus mr-2"></i> Ler mais</button>  
+                        <div class="card mt-4" *ngIf="exibir"> 
+                            <p class="card-text" readonly> {{desenho.descricao}}</p>                             
+                    </div>                       
+                    </div> 
+
+                    <div class="desenho col-auto mr-3 d-flex flex-column justify-content-center align-items-center ml-5 mb-4">
+                        <div class="card2" style="max-width: 22rem;">
+                          <img class="desenho1 mt-2 img-fluid card-img-top" [src]="desenho.imagem2" alt="desenho">        
+                      </div> 
+                      
+                 </div>
+
+                 
+    
+</div>
+
+</div>
+
+</div>
+</div> 
+</div>
+</div>
+</div>

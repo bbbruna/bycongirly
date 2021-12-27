@@ -1,0 +1,92 @@
+<div class="justify-content-center col-auto mx-auto">
+
+  <div class="text-center">
+  
+  <div class="bg2 col-auto d-flex flex-column justify-content-center mb-4"> 
+    <a> EDITAR         
+    </a>
+  </div> 
+  </div>
+
+  <form>
+   
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="cliente.nome">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="cliente.email">
+    </div>
+
+    <div class="form-group">
+      <label for="redeSociais">Redes sociais</label>
+      <input type="redeSociais" class="form-control" id="redeSociais" name="redeSociais" [(ngModel)]="cliente.redeSociais">
+    </div>
+
+    <div class="form-group">
+      <label for="contato">Contato</label>
+      <input type="text" class="form-control" id="contato" name="contato" [(ngModel)]="cliente.contato">
+    </div>
+
+    <div class="form-group">
+      <label for="linkReuniao">Link reunião</label>
+      <input type="text" class="form-control" id="linkReuniao" name="linkReuniao" [(ngModel)]="cliente.linkReuniao">
+    </div>
+
+    <div class="form-group">
+      <label for="briefing">Briefing</label>
+      <input type="text" class="form-control" id="briefing" name="briefing" [(ngModel)]="cliente.briefing">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="medidas">Medidas</label>
+      <input type="text" class="form-control" id="medidas" name="medidas" [(ngModel)]="cliente.medidas">
+    </div>
+
+    <div class="form-group">
+      <label for="endereco">Endereço</label>
+      <input type="text" class="form-control" id="endereco" name="endereco" [(ngModel)]="cliente.endereco">
+    </div>
+
+    <div class="form-group">
+      <label for="cidade">Cidade</label>
+      <input type="text" class="form-control" id="cidade" name="cidade" [(ngModel)]="cliente.cidade">
+    </div>
+
+    <div class="form-group">
+      <label for="estado">Estado</label>
+      <input type="text" class="form-control" id="estado" name="estado" [(ngModel)]="cliente.estado">
+    </div>
+
+    <div class="form-group">
+      <label for="cep">CEP</label>
+      <input type="text" class="form-control" id="cep" name="cep" [(ngModel)]="cliente.cep">
+    </div>
+
+    <div class="form-group">
+      <label for="data">Data da reunião</label>
+      <input type="date" class="form-control" id="data" name="data" [(ngModel)]="cliente.data">
+    </div>
+
+    <div class="form-group">
+      <label for="orcamentoFinal">Orçamento Final</label>
+      <input type="number" class="form-control" id="orcamentoFinal" name="orcamentoFinal" [(ngModel)]="cliente.orcamentoFinal">
+    </div>
+
+   
+    <div class="row mt-4">
+      <div class="col-6">
+        <button type="button" (click)="deletar()" class="btn btn-danger btn-block">Excluir</button>
+      </div>
+
+      <div class="col-6">
+        <button type="button" (click)="editar()" class="btn btn-success btn-block">Salvar</button>
+      </div>
+    </div>
+
+  </form>
+
+</div>

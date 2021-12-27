@@ -1,0 +1,42 @@
+<div class="container col-5">
+  <div class="row justify-content-center mt-5 mb-5">
+  
+    <form>
+        <div class="text-center">
+          <img class="mr-4"[src]="itens.colagem" width="40%">
+          <img [src]="itens.imagem" width="40%">
+        </div>
+
+        <div class="form-group">
+          <label for="colecao">Id</label>
+          <input type="text" class="form-control" id="id" name="id" [ngModel]="itens.id" readonly>
+        </div>
+  
+        <div class="form-group">
+          <label for="colecao">Coleção</label>
+          <input type="text" class="form-control" id="colecao" name="colecao" [ngModel]="itens.colecao" readonly>
+        </div>
+  
+        <div class="form-group mb-2">
+          <label for="descricao">Descrição</label> <br>
+          <textarea class="form-control">{{itens.descricao}}</textarea>
+        </div>
+
+  
+        <div class="row justify-content-center mt-5">
+
+          <div class="col-4 ">
+            <button type="button" class="btn btn-dark btn-block" [routerLink]="['/painel']"> Voltar </button>
+          </div>
+
+          <div class="col-4">
+            <button type="button" class="btn btn-warning btn-block" [routerLink]="['/editar', itens.id]"> Editar </button>
+          </div>
+        
+        </div>
+  
+      </form>
+
+    </div>
+  
+  </div>
